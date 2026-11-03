@@ -1,0 +1,9 @@
+# AI_REFLECTION
+
+**Tools used:** I used Claude to help check my work on this lab. I asked it to look over my plan and my BMI conditions, and to suggest tests I might have missed. I wrote the programs myself and read and tested anything I kept.
+
+**One decision:** I had to decide how to classify the BMI categories. At first I was thinking of writing a separate range for each category, like checking 18.5 to 25.0 as its own condition. I changed it to an if / else if chain: `bmi < 18.5` for Underweight, then `bmi <= 25.0` for Optimal, then Overweight for everything else. That way there are no gaps between categories, and the endpoints land where the lab says (18.5 and 25.0 are both Optimal) because the first check uses `<` and the second uses `<=`.
+
+**Checking my work:** I did the BMI math by hand to make sure my program's output was right. For 150 pounds and 70 inches: 150 × 703 = 105,450, and 70 × 70 = 4,900, so 105,450 / 4,900 is about 21.52. That matched the program. I also wrote down what I expected before each test and compared it to what the program printed, and I ran both final files again after my last changes.
+
+**Learning:** One thing I can now do myself is use `strcmp` to compare character arrays and explain why `==` doesn't work for that. One thing I still need to practice is writing the conditions for the color mixer cleanly, so I'm not repeating so many comparisons for both input orders.
